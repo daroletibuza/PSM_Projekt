@@ -1,0 +1,160 @@
+\section{Ergebnisse}
+\label{sec:ergebnisse}
+
+Die durchführten Versuchsabschnitte sind bei einer Raumtemperatur von \mbox{$\vartheta_a=\SI{24,1}{\celsius}$} durchgeführt worden. Während der Probennahme und der Bestimmung des Volumenstroms wies die Pumpe eine Durchschnittstemperatur von $\vartheta = \SI{26}{\celsius}$ auf.
+
+\subsection*{Kalibrierung}
+Im vorangegangenen Versuchsabschnitt wurde bereits die Wellenlänge des Absorptionsmaximums $\lambda_{max}$ erwähnt. In Tabelle \ref{tab:max} sind die ermittelten Wellenlängen der Lösungen K2, K4 und K5 aufgeführt.
+
+\begin{table}[h!]
+	\renewcommand*{\arraystretch}{1.2}
+	\centering
+	\rowcolors{2}{white}{gray!25}
+	\caption{Wellenlängen der Lösungen K2, K4 und K5 mit maximaler Absorbanz}
+	\label{tab:max}
+	%\resizebox{10.5cm}{!}{
+		\begin{tabulary}{1.0\textwidth}{CC|C}
+			\hline
+			\textbf{Kalibrierlösung} & \textbf{max. Absorbanz} & \textbf{Wellenlänge} $\left[\si{\nano\meter}\right]$\\
+			\hline
+			K2 & 0,1107 & 548\\
+			K4 & 0,2074	& 548\\
+			K5 & 0,3172 & 548\\
+			\hline			
+	\end{tabulary}
+	%}
+\end{table}%
+\FloatBarrier
+
+Da alle drei Kalibrierlösungen in der Wellenlänge mit ihrem Absorptionsmaximum $\lambda_{max} =\SI{548}{\nano\meter}$ übereinstimmten, wurde dieser Wert auch in der weiteren Versuchsdurchführung zur Bestimmung der Absorbanzen genutzt.
+Die bestimmten Absorbanzen der Kalibrierlösungen K1 bis K6 sind in Tabelle \ref{tab:kalib} aufgeführt. Weiterhin sind in Abbildung \ref{dia:kalibrier} in Form einer Kalibriergerade die Konzentrationen in Abhängigkeit von den gemessenen Absorbanzen dargestellt.
+
+\begin{table}[h!]
+	\renewcommand*{\arraystretch}{1.2}
+	\centering
+	\rowcolors{2}{gray!25}{white}
+	\caption{Wellenlängen der Lösungen K2, K4 und K5 mit maximaler Absorbanz}
+	\label{tab:kalib}
+	%\resizebox{10.5cm}{!}{
+	\begin{tabulary}{1.0\textwidth}{C|C|C}
+		\hline
+		\textbf{Kalibrierlösung} & \textbf{Konzentration } $\left[\si{\micro\gram \per \liter}\right]$& \textbf{Absorbanz} $\left[-\right]$\\
+		\hline
+		K1 & 10 & 0,0557\\
+		K2 & 20	& 0,1092\\
+		K3 & 30 & 0,1595\\
+		K4 & 40 & 0,2056\\
+		K5 & 60 & 0,3049\\
+		K6 & 80 & 0,4174\\
+		\hline			
+	\end{tabulary}
+	%}
+\end{table}%
+
+\begin{figure}[h!]
+	\begin{center}
+		\resizebox{0.8\textwidth}{!}{
+			\begin{tikzpicture}[trim axis left, trim axis right]
+				\begin{axis}[
+					grid = major,
+					axis lines = left,
+					width = \textwidth,
+					height = 8cm,
+					xticklabel style={
+						/pgf/number format/fixed,
+						/pgf/number format/precision=2
+					},
+					xmin = 0,
+					xmax = 0.5,
+					ymin = 0,
+					ymax = 100,
+					ytick = {0,10,...,100},
+					xtick = {0,0.05,...,1},
+					ylabel={Konzentration $c$ in $\left[\si{\micro \gram \per \liter}\right]$},
+					%y label style={at={(0,0.5)}},
+					xlabel={Absorbanz $A$ in $\left[-\right]$},
+					legend style={at={(0.4,0.2)},anchor=west},
+					%	y dir = reverse,
+					]
+					\addplot [color=black, mark=*, only marks] coordinates{(0.0557,10) (0.1091,20) (0.15946666,30) (0.20566666,40) (0.30486666666,60) (0.41737,80)};
+					
+					\addplot +[mark=none, dashed, black, domain=0:1] {x*195.8643166-0.875903115};
+					
+					\legend{Kalibrierpunkte, \text{$y=195,864*x-0,876$, $R^2=0,9992$}}
+				\end{axis}
+			\end{tikzpicture}
+		}
+		\caption{Kalibriergerade - Konzentrationen in Abhängigkeit der Absorbanzen}
+		\label{dia:kalibrier}
+	\end{center}
+\end{figure}
+\FloatBarrier
+
+\subsection*{Volumenstrom der Pumpe}
+Der Volumenstrom der Pumpe lässt sich aus den gemessenen Zeiten bestimmen, die die Seifenblasen benötigten, um sich innerhalb eines Volumens von \SI{500}{\milli \liter} zu bewegen (siehe Tab. \ref{tab:volumenstrom}, Gl. \ref{gl:volumenstrom}).
+\vspace*{-5mm}
+\begin{table}[h!]
+	\renewcommand*{\arraystretch}{1.2}
+	\centering
+	\rowcolors{2}{gray!25}{white}
+	\caption{Gemessene Zeiten des Seifenblasenzählers}
+	\label{tab:volumenstrom}
+	%\resizebox{10.5cm}{!}{
+	\begin{tabulary}{1.0\textwidth}{C|C|C}
+		\hline
+		\textbf{Messung} & \textbf{Volumen } $\left[\si{\liter}\right]$& \textbf{Zeit} $\left[\si{\second}\right]$\\
+		\hline
+		M1 & 0,5 	& 48,013\\
+		M2 & 0,5 	& 48,003\\
+		M3 & 0,5 	& 48,004\\
+		\hline
+		Mittelwert & 0,5 & 48,07\\
+		\hline			
+	\end{tabulary}
+	%}
+\end{table}%
+
+\begin{flalign}
+\label{gl:volumenstrom}
+	D &= \frac{V}{t} = \frac{\SI{0,5}{\liter}}{\SI{48,07}{\second}} = \SI{104,02e-4}{\liter \per \second} = \underline{\SI{0,624}{\liter \per \minute}}
+\end{flalign}
+
+\subsection*{Messung der Raumluftprobe}
+Mit der nun aufgestellten Kalibriergerade können nun aus gemessenen Absorbanzen (siehe Tab. \ref{tab:probe}) der Raumluftprobe die Konzentrationen bestimmt werden (siehe Gl.\ref{gl:probe}). Die Konzentration an \ce{NO2} in der Raumluft bestimmt sich mit Hilfe von Gleichung \ref{gl:volumen}.
+
+\begin{flalign}
+\label{gl:probe}
+	c &= \SI{195,864}{\micro\gram \per \liter}*A-\SI{0,876}{\micro \gram \per \liter}\\
+		&= \SI{195,864}{\micro\gram \per \liter}*0,0267-\SI{0,876}{\micro \gram \per \liter} = \underline{\SI{4,354}{\micro \gram \per \liter}}
+\end{flalign}
+
+\begin{flalign}
+	\label{gl:volumen}
+	\beta &= \frac{m_A}{D*t}*\frac{T_n+\vartheta}{T_n+\vartheta_a} = \frac{\SI{0,153}{\micro\gram}}{\SI{0,624e-3}{\kmeter \per \minute}*\SI{90}{\min}}*\frac{\SI{273}{\kelvin}+\SI{26}{\kelvin}}{\SI{273}{\kelvin}+\SI{24,1}{\kelvin}}\\
+		  &=\underline{\SI{1,95}{\micro\gram \per \kmeter}}
+\end{flalign}
+
+\begin{table}[h!]
+	\renewcommand*{\arraystretch}{1.2}
+	\centering
+	\rowcolors{2}{gray!25}{white}
+	\caption{Wellenlängen der Lösungen K2, K4 und K5 mit maximaler Absorbanz}
+	\label{tab:probe}
+	%\resizebox{10.5cm}{!}{
+	\begin{tabulary}{1.0\textwidth}{L|C|C|CC}
+		\hline
+		\textbf{Analysenprobe} & \textbf{Messung 1} & \textbf{Messung 2} & \textbf{Messung 3} & \textbf{Mittelwert}\\
+		\hline
+		Absorbanz $A$& 0,0267 & 0,0290 & 0,0270 & 0,02757\\
+		Konzentration $c$ $\left[\si{\micro\gram \per \liter}\right]$& 4,354& 4,804& 4,412&4,523\\
+		Masse $m$ $\left[\si{\micro \gram}\right]$ pro \SI{25}{\milli \liter} &0,109&0,120&0,110&0,113\\
+		Konzentration $\beta$ $\left[\si{\micro \gram \per \kmeter}\right]$ &1,95&2,15&1,98&2,03\\
+		\hline			
+	\end{tabulary}
+	%}
+\end{table}%
+\FloatBarrier
+Es fällt auf, dass alle drei Messungen und demzufolge auch der Mittelwert für $\beta$ kleiner sind als der Arbeitsplatzgrenzwert für \ce{NO2} laut Gefahrstoffverordnung ($\beta<$\SI{950}{\micro \gram \per \kmeter}).
+
+
+
