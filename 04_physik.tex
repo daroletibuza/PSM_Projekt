@@ -6,28 +6,78 @@ In diesem Abschnitt werden die theoretischen Grundlagen aufgeführt, die für di
 Die einfachste Variante um eine automatische Dosierung über einen festgelegten Zeitraum zu dosieren, ist ein höher gelegener, gefüllter Behälter mit einer Leitung zum Reaktionsraum. Typische Beispiele sind aus dem chemischen Labor der Tropftrichter und aus der Medizin eine Infusion. 
 
 \subsubsection*{Tropftrichter}
-Ein Tropftrichter beschreibt ein Glasgerät, welches im Labor zum Zutropfen von Flüssigkeiten und Lösungen zu einer Reaktionsmischung verwendet. Hierbei lässt sich über einen Hahn eine genaue Dosierung realisieren \cite{Hunig.2006}.
-Vorteil des Tropftrichter ist seine leichte Handhabung und die meist vorhandene Schliffverbindung, welche ein einfaches Montieren ermöglicht.
-Nachteil des Tropftrichters ist jedoch, dass sich mit ihm keine genauen Volumenströme, außer über die Tropfgeschwindigkeit einstellen lassen können. Zudem verringert sich die Geschwindigkeit mit Verringerung des hydrostatischen Druckes durch den Füllstand im Tropftrichter (siehe \hyperref[sec:torricelli]{\ref{sec:torricelli} \textsc{Torricelli}-Theorem}). Ebenfalls ein Nachteil ist, dass sich hochviskose Stoffe kaum bis gar nicht auf diese Art und Weise zu dosieren lassen.
+Ein Tropftrichter beschreibt ein Glasgerät, welches im Labor zum Zutropfen von Flüssigkeiten zu einer Reaktionsmischung verwendet wird. Hierbei lässt sich über einen Hahn innerhalb kurzer Zeiträume eine genaue Dosierung realisieren \cite{Hunig.2006}.\\
+Zu den Vorteilen des Tropftrichter gehören die leichte Handhabung und die Montage. Nachteilig ist jedoch, dass Volumenströme auf Dauer nicht genau eingestellt werden können (siehe \hyperref[sec:torricelli]{\ref{sec:torricelli} \textsc{Torricelli}-Theorem}). Zudem ist der Tropftrichter nicht für hochviskose Stoffe geeignet.
+%Vorteil des Tropftrichter ist seine leichte Handhabung und die meist vorhandene Schliffverbindung, welche ein einfaches Montieren ermöglicht.
+%Nachteil des Tropftrichters ist jedoch, dass sich mit ihm keine genauen Volumenströme, außer über die Tropfgeschwindigkeit einstellen lassen können. Zudem verringert sich die Geschwindigkeit mit Verringerung des hydrostatischen Druckes durch den Füllstand im Tropftrichter (siehe \hyperref[sec:torricelli]{\ref{sec:torricelli} \textsc{Torricelli}-Theorem}). Ebenfalls ein Nachteil ist, dass sich hochviskose Stoffe kaum bis gar nicht auf diese Art und Weise zu dosieren lassen.
 
 \subsubsection*{Schwerkraftinfusion}
-Alternativ findet sich im medizinischem Alltag ebenfalls eine Dosierung mit kleinen Flussraten in Form einer Schwerkraftinfusion wieder. Diese funktioniert, ebenso wie der Tropftrichter, aufgrund des hydrostatischen Druckes und kann üblicherweise Flussraten von \SI{5}{\milli \liter \per \hour} bis \SI{300}{\milli \liter \per \hour} erreichen \cite{pfm_medical}.
-Vorteil einer Schwerkraftinfusion zeigt sich in ihrem Aufbau, da über eine sogenannte Tropfenkammer und einen Durchflussregler eine genaue Tropfgeschwindigkeit einstellbar ist. Für den Anwender lassen sich so, einfacher als beim Tropftrichter die Tropfgeschwindigkeit und damit auch der Volumenstrom regulieren.
-Die Nachteile der Schwerkraftinfusion gleichen sich mit denen des Tropftrichters. Es wäre demnach eine regelmäßige Kontrolle der Tropfgeschwindigkeit notwendig aufgrund der sich ändernden Fließeigenschaften mit der Zeit. Somit wären regelmäßige Kontrollen der Fließrate innerhalb von 20-\SI{30}{\minute} nötig \cite{OnlinePortalfurprofessionellPflegende.06.03.2017}.
+Ein alternatives Dosiersystem, dass auch im medizinischen Alltag Anwendung findet heißt \textit{Schwerkraftinfusion}. Das Funktionsprinzip basiert ebenfalls auf Basis des hydrostatischen Druckes und erreicht Flussraten von \SI{5}{\milli \liter \per \hour} bis \SI{300}{\milli \liter \per \hour} \cite{pfm_medical}.\\
+Vorteil der Schwerkraftinfusion ist das Einstellen einer genauen Tropfgeschwindigkeit. Der Volumenstrom lässt sich einfacher als beim Tropftrichter regulieren. Die Nachteile der Schwerkraftinfusion gleichen sich mit denen des Tropftrichters \mbox{(siehe \hyperref[sec:torricelli]{\ref{sec:torricelli} \textsc{Torricelli}-Theorem})}. Aufgrund der sich verändernden Fließraten sind in der medizinischen Anwendung regelmäßige Kontrollen von 20-\SI{30}{\minute} nötig \cite{OnlinePortalfurprofessionellPflegende.06.03.2017}.
+
+%Alternativ findet sich im medizinischem Alltag ebenfalls eine Dosierung mit kleinen Flussraten in Form einer Schwerkraftinfusion wieder. Diese funktioniert, ebenso wie der Tropftrichter, aufgrund des hydrostatischen Druckes und kann üblicherweise Flussraten von \SI{5}{\milli \liter \per \hour} bis \SI{300}{\milli \liter \per \hour} erreichen \cite{pfm_medical}.
+%Vorteil einer Schwerkraftinfusion zeigt sich in ihrem Aufbau, da über eine sogenannte Tropfenkammer und einen Durchflussregler eine genaue Tropfgeschwindigkeit einstellbar ist. Für den Anwender lassen sich so, einfacher als beim Tropftrichter die Tropfgeschwindigkeit und damit auch der Volumenstrom regulieren.
+%Die Nachteile der Schwerkraftinfusion gleichen sich mit denen des Tropftrichters. Es wäre demnach eine regelmäßige Kontrolle der Tropfgeschwindigkeit notwendig aufgrund der sich ändernden Fließeigenschaften mit der Zeit. Somit wären regelmäßige Kontrollen der Fließrate innerhalb von 20-\SI{30}{\minute} nötig \cite{OnlinePortalfurprofessionellPflegende.06.03.2017}.
 
 \subsection{Ausflussgeschwindigkeit - \textsc{Torricelli-Theorem}}
 \label{sec:torricelli}
-Sowohl Tropftrichter als auch 
+Sowohl Tropftrichter als auch Schwerkraftinfusion weisen das Problem auf, dass diese mit sinkendem Flüssigkeitsspiegel auch eine verringerte Strömungsgeschwindigkeit aufweisen, aufgrund des damit sinkenden hydrodynamischen Druckes. 
+Eine Erklärung und Beschreibung für diese Tatsache bietet das \textsc{Torricelli}-Theorem. Dieses trifft die Annahme, dass sich Fluidteilchen, ähnlich dem freien Fall, in einer Flüssigkeit bewegen, wenn der Flüssigkeitsspiegel langsam fällt. In der Praxis heißt dieses langsame Sinken des Flüssigkeitsspiegels, dass zwischen der Oberfläche des Flüssigkeitsspiegels $A_1$ und der Fläche des Austrittsloches als ideale Öffnung $A_2$, $A_1>>A_2$ gilt \cite{Kurzweil.2008}. Ausgehend von diesen Annahmen und der Tatsache, dass sich die Höhe des Flüssigkeitsspiegels $h$ und somit auch die Geschwindigkeit $v$ in Abhängigkeit von der Zeit verändern, ergibt sich somit Gleichung \eqref{gl:torricelli} \cite{tecscience.2019}.
+
+\begin{equation}
+\label{gl:torricelli}
+	v(t) = \sqrt{2*g*h(t)}
+\end{equation}
+
+%Um den Term \eqref{gl:torricelli} auch für inkompressible, reale Fluide anzupassen werden die Korrekturfaktoren der Geschwindigkeitsziffer $\varphi$, welche die Reibung berücksichtigt und die Kontraktionszahl $\alpha$ eingeführt, welche die Form der Öffnung beachtet (siehe Gleichung \eqref{gl:torricelli_real})\cite{Kurzweil.2008}. Für Wasser und einer scharfkantigen Öffnung ergeben sich laut \cite{Kurzweil.2008} somit die Zahlen $\varphi=0,97$ und $\alpha=\frac{\pi}{2+\pi}\approx 0,61$ (vgl. Gleichung \eqref{gl:torricelli_real_wasser}).
+
+\begin{equation}
+	\label{gl:torricelli_real}
+	v(t) = \alpha*\varphi*\sqrt{2*g*h(t)}
+\end{equation}
+
+%\textit{für Wasser und scharfkantige Öffnungen:}
+%\begin{equation}
+%	\label{gl:torricelli_real_wasser}
+%	v(t) = 0,61*0,97*\sqrt{2*g*h(t)} \approx 0,6*\sqrt{2*g*h(t)}
+%\end{equation}
+
+Um nun bestimmen zu können über welchem Verlauf die Ausflussgeschwindigkeit abnimmt, ist der Flüssigkeitsspiegel $h(t)$ als Funktion von der Zeit zu ermitteln. Grundlage hierfür bieten das Aufstellen und Lösen von Differentialgleichungen
+%welche an dieser Stelle nicht weiter ausgeführt werden und auf weiterführende Literatur verwiesen wird
+\mbox{(siehe \cite{tecscience.2019})}. Als Ergebnis dieser Umformungen ergibt sich Gleichung \eqref{gl:h(t)} mit $H$ als Höhe des Füllstandes zum Zeitpunkt $t=0$.
+
+\begin{equation}
+	\label{gl:h(t)}
+	h(t) = \left(\sqrt{H}-\frac{A_2}{A_1}*\sqrt{\frac{g}{2}}*t\right)^2
+\end{equation}
+
+Es fällt auf, dass in Gleichung \eqref{gl:h(t)} der Flüssigkeitsspiegel quadratisch abfällt und die Höhe des Flüssigkeitsspiegels in Gleichung \eqref{gl:torricelli_real} in einer Wurzelfunktion in die Ausflussgeschwindigkeit eingeht. Daraus ergibt sich, dass die Ausflussgeschwindigkeit linear gegenüber der Zeit abfällt. Der Anstieg bzw. Abfall der Ausflussgeschwindigkeit über der Zeit hängt laut Gleichung \eqref{gl:h(t)} von der Höhe $H$, sowie dem Verhältnis der Lochoberfläche zur Oberfläche des Flüssigkeitsspiegels $\frac{A_2}{A_1}$ ab. Schlussendlich ergibt sich Gleichung \eqref{gl:torricelli_ende}.
+\begin{equation}
+	\label{gl:torricelli_ende}
+	\dot{V}(t) = A_2*v(t) =  A_2*\alpha*\varphi*\sqrt{2*g*\left(\sqrt{H}-\frac{A_2}{A_1}*\sqrt{\frac{g}{2}}*t\right)^2} \\
+\end{equation}
 
 \subsection{Dosierung mittels Pumpen}
+Über das \textsc{Torricelli}-Theorem wurde deutlich, dass ein linearer Abfall des Volumenstroms über der Zeit besteht, ausgehend von Systemen ähnlich dem Tropftrichter und der Schwerkraftinfusion. Ist jedoch eine konstante Zudosierung über einen längeren Zeitraum nötig, die Auslegung eines solchen Dosiersystems mittels Tropf zu aufwendig oder die technische Umsetzbarkeit für so kleine Volumenströme schlecht realisierbar, dann bietet sich der Einsatz eines geregelten Pumpensystems an. \\
+Ein solches Dosierpumpensystem setzt sich grundlegend aus vier Bestandteilen zusammen (vgl. \cite{Ignatowitz.2013}). Dazu gehören eine Pumpe zum Fördern des Mediums, ein Messgerät zur Förderstrommessung, ein Stellglied (z.B. Stellventil oder Pumpenmotor), sowie ein Regler, welcher Soll- und Messwert vergleicht und danach das Stellglied einstellt. 
+\newpage
+Moderne Laborpumpen können den zuvor beschriebenen Abfall des hydrostatischen Drucks durch eigene Regeleinrichtungen kompensieren \cite{https:www.industr.com.16.06.2021}.\\
+\textit{Hinweis:} In der Versuchsdurchführung ist auf eine solche Regelung verzichtet worden.
+
 \subsubsection*{Zahnradpumpe}
-\subsubsection*{Spritzenpumpe}
+Zahnradpumpen sind rotierende Verdrängungspumpen (Umlaufpumpen), welche über eine formschlüssige Bewegung eines Zahnradwalzenpaares im Pumpengehäuse Flüssigkeiten fördern können. Sie eignen sich vor allem für mittel- bis hochviskose Medien und kleine, konstante Volumenströme. Gegenüber Feststoffpartikeln im Fördermedium reagieren Zahnradpumpen hingegen sehr empfindlich. Weiterhin sollte eine Zahnradpumpe nicht trocken (mit Luft) betrieben werden. \cite{Ignatowitz.2013} 
+
 \subsubsection*{Schlauch-Peristaltik-Pumpe}
-\subsubsection*{Membranmagnetpumpe}
+Schlauchpumpen sind ebenfalls Umlaufpumpen und funktionieren nach dem Prinzip der Verdrängung. In einem kreisförmigen Pumpengehäuse drücken zwei bis drei umlaufende Rollen einen hochelastischen Kunststoffschlauch an einer Abrollstelle zusammen. Durch dieses Abquetschen des Schlauches wird ein Flüssigkeitsvolumen eingeschlossen was dazuführt, dass durch weiteren Umlauf der Rollen die Flüssigkeit in Richtung der Druckseite der Pumpe gefördert wird. Vorteil der Schlauchpumpe ist, dass bis auf den Schlauch keine Pumpenteile mit dem Fördermedium in Berührung kommen und sich die Schläuche kostengünstig wechseln lassen. So können selbst giftige oder aggressive Stoffe gefördert werden. Als Nachteil lässt sich vermerken, dass Schlauchpumpen nicht vollständig pulsationsfrei arbeiten. \cite{Ignatowitz.2013}
+
+\subsubsection*{Magnet-Membranpumpe}
+Als klassische Dosierpumpe gilt die Kolben-Membranpumpe. Ein Bauform dieser Pumpen für kleinere Volumenströme ist jedoch die Magnet-Membrandosierpumpe. Über einen an einer Spule angelegter Wechselstrom wird ein sich wechselnd auf- und abbauendes Magnetfeld erzeugt. Dieses Magnetfeld bewegt daraufhin einen sogenannten Schwinganker, welcher über einen Hebel auf die Pumpenmembran wirkt. Die oszillierende Bewegung der Membran sorgt dann schlussendlich für das Pumpen des Fördermediums. Durch jeden Hub des Schwingankers wird dabei eine gleichgroße Portion der Flüssigkeit transportiert, was einen  konstanten, jedoch auch pulsierenden Förderstrom zur Folge hat. Dennoch eignen sich Membranpumpen gut als Dosierpumpen für (feststoffhaltige) Flüssigkeiten.  \anmerkung{Quellen !}
+
+\subsubsection*{Spritzenpumpe}
+Im Gegensatz zu den zuvor beschriebenen Pumpen ist die Spritzenpumpe nicht im industriellen Maßstab zu finden. Spritzenpumpen werden hauptsächlich in der Medizin zur kontinuierlichen Verabreichung von Medikamenten, aber auch zur kontinuierlichen Dosierung im chemischen Labor genutzt. Gewährleistet wird die Dosierung über einen Schrittmotor mit einer Schneckenstange, welche den Kolben der Spritze bewegen. Über ein entsprechendes Eingabesystem können die Förderraten eingestellt werden. Vorteil der Spritzenpumpe ist es, dass Förderraten von wenigen \si{\pico \liter \per \minute} pulsationsfrei erreicht werden können. 
+\newpage
+Der Nachteil besteht darin, dass aufgrund der hohen Dosiergenauigkeit Spritzenpumpen sehr kostenintensiv sind. Weiterhin ist das zu dosierende Volumen auf das Volumen der Spritze limitiert (meist \SI{150}{\milli \liter}). \anmerkung{Quellen !}
 
 \subsection{Temperaturprofile mittels Thermostat}
-\anmerkung{Anleitungen verlinken bzw. Arbeit in externes Dokument aufteilen}
-
-\subsection{Rührer und Drehzahl}
-Ankerrührer hochviskose Medien
-Drehzahl nicht genau bestimmbar
+Temperaturprofile im Labormaßstab lassen mit Hilfe eines Thermostat-Systems umsetzen. Diese verfügen über ein ansteuerbares Umwälzthermostat über welches die Temperaturprofile einprogrammiert werden können. Ebenso verfügt das System über ein  Temperierbad, welches die Temperierflüssigkeit enthält. Über eine Heizspirale, eine Kühlspirale und einer Pumpe können somit verschiedenste interne und externe Temperieraufgaben umgesetzt werden.
+\anmerkung{Verlinkung Anleitung Beschreibung}
