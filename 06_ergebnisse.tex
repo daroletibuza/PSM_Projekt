@@ -89,10 +89,12 @@ Zu beachten ist, dass der Verlauf der Solltemperatur bis auf ein paar Minuten zu
 	\end{center}
 \end{figure}
 \FloatBarrier
-
+\vspace*{-5mm}
 \subsection*{Ergebnisse der Pumpendosierung}
 
-In Tabelle \ref{tab:pumpe1} sind die Ergebnisse der Volumenströme bei verschiedenen Pumpeneinstellungen der Magnetmembran-Pumpe aufgeführt. Zeit- und Volumenmessung sind hierbei etwas unpräzise, dennoch ist die Tendenz der Einstellungen erkennbar.
+In Tabelle \ref{tab:pumpe1} sind die Ergebnisse der Volumenströme bei verschiedenen Pumpeneinstellungen der Magnetmembran-Pumpe aufgeführt. Zeit- und Volumenmessung sind hierbei etwas unpräzise, dennoch ist die Tendenz der Einstellungen erkennbar.\\
+Als grobe Abschätzung zeigt sich, dass die Magnet-Membranpumpe ein minimalen Volumenstrom von rund \SI{6}{\milli \liter \per \minute} bzw. \SI{360}{\milli \liter \per \hour}.\\
+In Tabelle \ref{tab:pumpe2} sind die Messergebnisse für die untersuchte Zahnradpumpe aufgeführt. Hierfür wurde die minimale Drehzahl danach bestimmt ab welchem Punkt noch ein Volumenstrom zu verzeichnen ist. Zu beachten ist, dass sich die Messwerte auf einen bestimmten Füllstand des Behälters beziehen. Zudem stehen Vorratsbehälter und Pumpe auf gleicher Höhe. 
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
@@ -116,18 +118,16 @@ In Tabelle \ref{tab:pumpe1} sind die Ergebnisse der Volumenströme bei verschied
 	\end{tabulary}}
 \end{table}%
 \FloatBarrier
-Als grobe Abschätzung zeigt sich, dass die Magnet-Membranpumpe ein minimalen Volumenstrom von rund \SI{6}{\milli \liter \per \minute} bzw. \SI{360}{\milli \liter \per \hour}. \\
-
-In Tabelle \ref{tab:pumpe2} sind die Messergebnisse für die untersuchte Zahnradpumpe aufgeführt. Hierfür wurde die minimale Drehzahl danach bestimmt ab welchem Punkt noch ein Volumenstrom zu verzeichnen ist. Zu beachten ist, dass sich die Messwerte auf einen bestimmten Füllstand des Behälters beziehen. Zudem stehen Vorratsbehälter und Pumpe auf gleicher Höhe. \\
+\vspace*{-5mm}
 Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Füllstandes und Höhenunterschied zwischen Behälter und Pumpe sich unterschiedliche minimale Drehzahlen ergeben! Daher sind die Messwerte in Tabelle \ref{tab:pumpe2} kritisch zu bewerten. Eine grobe Abschätzung der Volumenströme im Vergleich zu Magnet-Membranpumpe und den geforderten Volumenströmen ist dennoch möglich (vgl. Abb. \ref{dia:bar_pumpe}). In dieser Abbildung fällt bereits auf, dass beide Pumpen den meisten Anforderungen des Prozesses nicht gerecht werden.
-
+\vspace*{-5mm}
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
 	\rowcolors{2}{white}{gray!25}
 	\caption{Minimale Volumenströme der Zahnradpumpe}
 	\label{tab:pumpe2}
-	%\resizebox{\textwidth}{!}{
+	\resizebox{0.8\textwidth}{!}{
 		\begin{tabulary}{1.0\textwidth}{CCCC}
 			\textbf{Messreihe} & \textbf{Zeit $\left[\si{\minute}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}& \textbf{Volumenstrom $\left[\si{\milli \liter \per \minute}\right]$}\\
 			\hline
@@ -136,17 +136,16 @@ Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Fülls
 			3     & 5   & 16,5  & 3,3 \\
 			\hline
 	\end{tabulary}
-%}
+}
 \end{table}%
 \FloatBarrier 
-
 \begin{figure}[h!]
 	\begin{center}
 		\resizebox{0.8\textwidth}{!}{
 		\begin{tikzpicture}
 			\begin{axis}[
 				width  = 0.85*\textwidth,
-				height = 7cm,
+				height = 6cm,
 				major x tick style = transparent,
 				ybar=2*\pgflinewidth,
 				bar width=14pt,
@@ -200,31 +199,97 @@ Die Tatsache, dass die Volumenströme der Zahnradpumpe abhängig vom Füllstand 
 	%\rowcolors{2}{white}{gray!25}
 	\caption{Volumenströme der Zahnradpumpe in Abhängigkeit von der Zeit}
 	\label{tab:pumpe2_anderung}
-	\resizebox{\textwidth}{!}{
+	\resizebox{0.75\textwidth}{!}{
 		\begin{tabulary}{1.3\textwidth}{C|CC|C|C}
 			\hline
-			\textbf{Messreihe} & \textbf{Zeit $\left[\si{\second}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}&\textbf{Volumenstrom $\left[\si{\milli \liter \per \hour}\right]$}&$\mathbf{\frac{\dot{V}_o-\dot{V}_i}{\dot{V}_0}\, \left[\si{\percent}\right]}$\\
-			\multirow{4}{*}{1} &0&200&12632&0\\
-			&60&400&12308&3\\
-			&124&600&11934&6\\
-			&194&800&11474&9\\
+			\textbf{Messreihe} & \textbf{Zeit $\left[\si{\second}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}&\textbf{Volumenstrom $\left[\si{\liter \per \hour}\right]$}&$\mathbf{\frac{\dot{V}_o-\dot{V}_i}{\dot{V}_0}\, \left[\si{\percent}\right]}$\\
 			\hline
-			\multirow{3}{*}{2} &0&200&24828&0\\
-			&30&400&24407&2\\
-			&60&600&24000&3\\
+			\multirow{3}{*}{1} &0&200&24,8&0\\
+			&30&400&24,4&2\\
+			&60&600&24,0&3\\
 			\hline
-			\multirow{4}{*}{3} &0&200&24828&0\\
-			&30&400&24407&2\\
-			&126&1000&23226&6\\
-			&200&1400&22009&11\\
+			\multirow{4}{*}{2} &0&200&24,8&0\\
+			&30&400&24,4&2\\
+			&126&1000&23,2&6\\
+			&200&1400&22,0&11\\
 			\hline
-			\multirow{5}{*}{4} &0&100&2628&0\\
-			&153&200&2483&6\\
-			&241&250&2381&9\\
-			&334&300&2293&13\\
-			&535&400&2143&18\\
+			\multirow{4}{*}{3} &0&200&12,6&0\\
+			&60&400&12,3&3\\
+			&124&600&11,9&6\\
+			&194&800&11,5&9\\
+			\hline
+			\multirow{5}{*}{4} &0&100&2,6&0\\
+			&153&200&2,5&6\\
+			&241&250&2,4&9\\
+			&334&300&2,3&13\\
+			&535&400&2,1&18\\
 			\hline			
 	\end{tabulary}}
 \end{table}%
 \FloatBarrier
+
+Für die Volumenströme der vier Messreihen gilt:
+\begin{equation*}
+	\dot{V}_1 = \dot{V}_2 > \dot{V}_3 > \dot{V}_4
+\end{equation*}
+
+Da nach dem \textsc{Torricelli}-Theorem (siehe Abschnitt \ref{sec:torricelli}) ein linearer Abfall der Geschwindigkeit bzw. des Volumenstroms zu erwarten ist, wird ebenfalls eine linearer Anstieg der Abweichung des Startvolumenstroms über der Zeit erwartet. Aufgetragen ist dieser Zusammenhang in Abb. \ref{dia:pump_fehler}.
+
+\begin{figure}[h!]
+	\begin{center}
+		\resizebox{0.8\textwidth}{!}{
+			\begin{tikzpicture}[trim axis left, trim axis right]
+				\begin{axis}[
+					grid = major,
+					axis lines = left,
+					width = \textwidth,
+					height = 7.5cm,
+					xticklabel style={
+						/pgf/number format/fixed,
+						/pgf/number format/precision=2
+					},
+					xmin = 0,
+					xmax = 600,
+					ymin = 0,
+					ymax = 25,
+					ytick = {0,5,...,100},
+					%xtick = {-1,...,10},
+					ylabel={Abweichung $a$ zum Startvolumenstrom in $\left[\si{\percent}\right]$},
+					%y label style={at={(0,0.5)}},
+					xlabel={Zeit $t$ in $\left[\si{\second}\right]$},
+					legend style={at={(0.05,0.8)},anchor=west},
+					%	y dir = reverse,
+					]
+					
+					\addplot [color=red, mark=*] coordinates{(0,0) (30,1.69491525423728) (61,3.33333333333333)};
+					
+					\addplot [color=gray, mark=*] coordinates{(0,0) (30,1.69491525423728) (126,6.45161290322581) (200,11.353711790393)  };
+					
+					\addplot [color=black, mark=*] coordinates{(0,0) (60,2.56410256410256) (124,5.52486187845303) (194,9.16334661354581)};
+					
+					\addplot [color=blue, mark=*] coordinates{(0,0) (153,5.51724137931034) (241,9.39153439153439) (334,12.7388535031847) (535,18.452380952381) };
+					
+					\addplot +[mark=none, dashed, blue, domain=0:600] {0.0349*x+0.4087};
+					
+					
+					\legend{Messreihe 1, Messreihe 2, Messreihe 3, Messreihe 4, \text{$0,0349*t+0,4087\,|\, R=0,99$}}
+				\end{axis}
+			\end{tikzpicture}
+		}
+		\caption{Abweichung vom Startvolumenstrom in Abhängigkeit von der Zeit}
+		\label{dia:pump_fehler}
+	\end{center}
+\end{figure}
+\FloatBarrier
+\vspace*{-5mm}
+In Abbildung \ref{dia:pump_fehler} ist zu erkennen, dass alle Messreihen jeweils eine Gerade ergeben. Zudem zeigt sich, dass Messreihe 4, mit dem geringsten Volumenstrom, den geringsten Anstieg und Messreihe 1, mit dem höchsten Volumenstrom, den höchsten Anstieg aufweist. 
+\newpage
+Berechnet man zusätzlich für Messreihe 4 die, die benötigt wird um eine Abweichung von \SI{100}{\percent}, sprich $\dot{V}=\SI{0}{\liter \per \hour}$,  zu erreichen so ergibt sich eine Zeit von $t_\text{Ende} \approx \SI{48}{\minute}$ \mbox{(vgl. Gleichung \ref{gl:zeit})}.
+\vspace*{-2.5mm}
+\begin{flalign}
+\label{gl:zeit}
+	a_{M4} &= 0,0349*t+0,4087\\
+	t &= \frac{a_{M4}-0,4087}{0,0349} = \frac{100-0,4087}{0,0349} \\
+	&= \SI{2855}{\second} \approx\underline{ \SI{48}{\minute}}
+\end{flalign}
 
