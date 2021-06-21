@@ -1,7 +1,7 @@
 \section{Ergebnisse}
 \label{sec:ergebnisse}
 \subsection*{Ergebnisse der Temperaturprofile}
-In Tabelle \ref{tab:zeiten} sind die gemessenen Zeiten zum Aufheizen und Abkühlen aufgeführt und in Tabelle \ref{tab:volumenstrom_kuehlung} sind die Messwerte für die Bestimmung des maximalen Volumenstroms des Kühlwassers aufgeführt.
+In Tabelle \ref{tab:volumenstrom_kuehlung} sind die Messwerte für die Bestimmung des maximalen Volumenstroms des Kühlwassers und in Tabelle \ref{tab:zeiten} sind die gemessenen Zeiten zum Aufheizen und Abkühlen des leeren Reaktorsystems aufgeführt.
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
@@ -38,8 +38,8 @@ Für diesen Versuch konnte eine mittlerer Kühlwasserstrom von \SI{55,3}{\liter\
 Für das Erreichen der Solltemperatur von \SI{80}{\celsius} und einer Starttemperatur von \SI{25}{\celsius} ergab sich für das genutzte Thermostat eine Aufheizzeit von \SI{24}{\minute}. Die umgekehrte Kühlung des Thermostates auf \SI{25}{\celsius} bei einer Starttemperatur von \SI{80}{\celsius} ergab unter Nutzung des maximalen Kühlwasserstrom ebenfalls \SI{24}{\minute}. \\
 Als Folge dieser Ergebnisse wurden die Temperaturprofile so programmiert, dass zum Aufheizen bzw. Abkühlen jeweils \SI{25}{\minute} Zeit sind. 
 
-In Abb. \ref{dia:temp_graphen} sind alle thermischen Vorgänge nochmal für den gesamten Prozess 1 ohne Wasserdampfdestillation in einem Diagramm dargestellt.
-Zu beachten ist, dass der Verlauf der Solltemperatur bis auf ein paar Minuten zu Beginn nicht gemessen wurde. Der weitere Verlauf ist für die Prozessdarstellung simuliert worden. Der Zeitpunkt $t=0$ wurde mit Beginn des Aufheizvorganges festgelegt.
+In Abb. \ref{dia:temp_graphen} sind alle thermischen Vorgänge für den gesamten Prozess 1 ohne Wasserdampfdestillation in einem Diagramm dargestellt.
+Zu beachten ist, dass der Verlauf der Solltemperatur bis auf ein paar Minuten zu Beginn nicht gemessen wurde! Der weitere Verlauf der Solltemperatur ist für die Prozessdarstellung simuliert worden. Der Zeitpunkt $t=0$ wurde mit Beginn des Aufheizvorganges festgelegt.
 
 \begin{figure}[h!]
 	\begin{center}
@@ -92,34 +92,34 @@ Zu beachten ist, dass der Verlauf der Solltemperatur bis auf ein paar Minuten zu
 \vspace*{-5mm}
 \subsection*{Ergebnisse der Pumpendosierung}
 
-In Tabelle \ref{tab:pumpe1} sind die Ergebnisse der Volumenströme bei verschiedenen Pumpeneinstellungen der Magnetmembran-Pumpe aufgeführt. Zeit- und Volumenmessung sind hierbei etwas unpräzise, dennoch ist die Tendenz der Einstellungen erkennbar.\\
-Als grobe Abschätzung zeigt sich, dass die Magnet-Membranpumpe ein minimalen Volumenstrom von rund \SI{6}{\milli \liter \per \minute} bzw. \SI{360}{\milli \liter \per \hour}.\\
-In Tabelle \ref{tab:pumpe2} sind die Messergebnisse für die untersuchte Zahnradpumpe aufgeführt. Hierfür wurde die minimale Drehzahl danach bestimmt ab welchem Punkt noch ein Volumenstrom zu verzeichnen ist. Zu beachten ist, dass sich die Messwerte auf einen bestimmten Füllstand des Behälters beziehen. Zudem stehen Vorratsbehälter und Pumpe auf gleicher Höhe. 
+In Tabelle \ref{tab:pumpe1} sind die Ergebnisse der Volumenströme bei verschiedenen Pumpeneinstellungen der Magnetmembran-Pumpe aufgeführt. Zeit- und Volumenmessung sind hierbei unpräzise, dennoch ist die Tendenz der Einstellungen erkennbar.\\
+Als grobe Abschätzung zeigt sich, dass die Magnet-Membranpumpe ein minimalen Volumenstrom von rund \SI{6}{\milli \liter \per \minute} bzw. \SI{360}{\milli \liter \per \hour} hat.\\
+In Tabelle \ref{tab:pumpe2} sind die Messergebnisse für die untersuchte Zahnradpumpe aufgeführt. Hierfür wurde die minimale Drehzahl danach bestimmt bei welcher Einstellung noch ein Volumenstrom zu verzeichnen ist. Anzumerken ist, dass sich die Messwerte auf einen bestimmten Füllstand des Behälters beziehen. Zudem stehen Vorratsbehälter und Pumpe auf gleicher Höhe. 
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
 	\rowcolors{2}{white}{gray!25}
 	\caption{Volumenströme der Magnet-Membranpumpe in verschiedenen Einstellungen}
 	\label{tab:pumpe1}
-	\resizebox{\textwidth}{!}{
-		\begin{tabulary}{1.3\textwidth}{CCCCCC}
-			\textbf{Messreihe} & \textbf{Hublänge $\left[\si{\percent}\right]$} &  \textbf{Hubfrequenz $\left[\si{\percent}\right]$} & \textbf{Zeit $\left[\si{\minute}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}& \textbf{Volumenstrom $\left[\si{\milli \liter \per \minute}\right]$}\\
+	\resizebox{0.9\textwidth}{!}{
+		\begin{tabulary}{1.5\textwidth}{CCCCCCC}
+			\textbf{Messreihe} & \textbf{Hublänge $\left[\si{\percent}\right]$} &  \textbf{Hubfrequenz $\left[\si{\percent}\right]$} & \textbf{Zeit $\left[\si{\minute}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}& \textbf{Volumenstrom $\left[\si{\milli \liter \per \minute}\right]$}&\textbf{Volumenstrom} $\left[\si{\milli \liter \per \hour}\right]$\\
 			\hline
-			1     & 40    & 40    & 1,5   & 101 & 67,3 \\
-			2     & 20    & 20    & 2,0     & 112   & 56,0 \\
-			3     & 40    & 10    & 0,5   & 20  & 40,0 \\
-			4     & 40    & 10    & 1,0     & 34  & 34,0 \\
-			5     & 40    & 10    & 1,0     & 29  & 29,0 \\
-			6     & 40    & 10    & 1,0     & 28  & 28,0 \\
-			7     & 20    & 10    & 2,0     & 31  & 15,5 \\
-			8     & 10    & 10    & 2,0     & 20  & 10,0 \\
-			9     & 5     & 10    & 2,0     & 12  & 6,0 \\
+			1     & 40    & 40    & 1,5   & 101 & 67,3 &4038\\
+			2     & 20    & 20    & 2,0     & 112   & 56,0&3360 \\
+			3     & 40    & 10    & 0,5   & 20  & 40,0 &2400\\
+			4     & 40    & 10    & 1,0     & 34  & 34,0 &2040\\
+			5     & 40    & 10    & 1,0     & 29  & 29,0 &1740\\
+			6     & 40    & 10    & 1,0     & 28  & 28,0 &1680\\
+			7     & 20    & 10    & 2,0     & 31  & 15,5 &930\\
+			8     & 10    & 10    & 2,0     & 20  & 10,0 &600\\
+			9     & 5     & 10    & 2,0     & 12  & 6,0 &360\\
 			\hline
 	\end{tabulary}}
 \end{table}%
 \FloatBarrier
 \vspace*{-5mm}
-Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Füllstandes und Höhenunterschied zwischen Behälter und Pumpe sich unterschiedliche minimale Drehzahlen ergeben! Daher sind die Messwerte in Tabelle \ref{tab:pumpe2} kritisch zu bewerten. Eine grobe Abschätzung der Volumenströme im Vergleich zu Magnet-Membranpumpe und den geforderten Volumenströmen ist dennoch möglich (vgl. Abb. \ref{dia:bar_pumpe}). In dieser Abbildung fällt bereits auf, dass beide Pumpen den meisten Anforderungen des Prozesses nicht gerecht werden.
+Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Füllstandes und Höhenunterschied zwischen Behälter und Pumpe sich unterschiedliche minimale Drehzahlen ergeben. Die Magnet-Membranpumpe ist nicht auf dieses Zusammenhang untersucht worden, es wird jedoch erwartet, dass auch für diese Pumpe eine Abhängigkeit des Volumenstroms vom Füllstand besteht. Daher sind die Messwerte in Tabelle \ref{tab:pumpe2} kritisch zu bewerten. Eine grobe Abschätzung der Volumenströme im Vergleich zur Magnet-Membranpumpe und den geforderten Volumenströmen ist dennoch möglich (vgl. Abb. \ref{dia:bar_pumpe}). In dieser Abbildung fällt bereits auf, dass beide Pumpen den meisten Anforderungen des Prozesses nicht gerecht werden.
 \vspace*{-5mm}
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
@@ -127,13 +127,13 @@ Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Fülls
 	\rowcolors{2}{white}{gray!25}
 	\caption{Minimale Volumenströme der Zahnradpumpe}
 	\label{tab:pumpe2}
-	\resizebox{0.8\textwidth}{!}{
-		\begin{tabulary}{1.0\textwidth}{CCCC}
-			\textbf{Messreihe} & \textbf{Zeit $\left[\si{\minute}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}& \textbf{Volumenstrom $\left[\si{\milli \liter \per \minute}\right]$}\\
+	\resizebox{0.7\textwidth}{!}{
+		\begin{tabulary}{1.2\textwidth}{CCCCC}
+			\textbf{Messreihe} & \textbf{Zeit $\left[\si{\minute}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}& \textbf{Volumenstrom $\left[\si{\milli \liter \per \minute}\right]$}&\textbf{Volumenstrom $\left[\si{\milli \liter \per \hour}\right]$}\\
 			\hline
-			1     & 5   & 17,0 	& 3,4 \\
-			2     & 5   & 16,0   	& 3,2 \\
-			3     & 5   & 16,5  & 3,3 \\
+			1     & 5   & 17,0 	& 3,4 & 204\\
+			2     & 5   & 16,0   	& 3,2 &192\\
+			3     & 5   & 16,5  & 3,3 & 198\\
 			\hline
 	\end{tabulary}
 }
@@ -190,7 +190,7 @@ Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Fülls
 \end{figure}
 \FloatBarrier
 
-Die Tatsache, dass die Volumenströme der Zahnradpumpe abhängig vom Füllstand sind wird in Tabelle \ref{tab:pumpe2_anderung} untermauert. Hierbei wurden bei verschiedenen Drehzahlen, gleicher Höhendifferenz zwischen Vorratsbehälter und Pumpe bestimmte Volumina über die Zeit gemessen. Die dargestellte Zeit ist hierbei als Offset der ersten Zeitmessung der jeweiligen Messreihe zu verstehen. 
+Die Tatsache, dass die Volumenströme der Zahnradpumpe abhängig vom Füllstand sind wird in Tabelle \ref{tab:pumpe2_anderung} untermauert. Hierbei wurden bei verschiedenen Drehzahlen und gleicher Höhendifferenz zwischen Vorratsbehälter und Pumpe, bestimmte Volumina über die Zeit gemessen. Die dargestellte Zeit ist hierbei als Offset der ersten Zeitmessung der jeweiligen Messreihe zu verstehen. 
 
 % Table generated by Excel2LaTeX from sheet 'Daten'
 \begin{table}[h!]
@@ -199,7 +199,7 @@ Die Tatsache, dass die Volumenströme der Zahnradpumpe abhängig vom Füllstand 
 	%\rowcolors{2}{white}{gray!25}
 	\caption{Volumenströme der Zahnradpumpe in Abhängigkeit von der Zeit}
 	\label{tab:pumpe2_anderung}
-	\resizebox{0.75\textwidth}{!}{
+	\resizebox{0.5\textwidth}{!}{
 		\begin{tabulary}{1.3\textwidth}{C|CC|C|C}
 			\hline
 			\textbf{Messreihe} & \textbf{Zeit $\left[\si{\second}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}&\textbf{Volumenstrom $\left[\si{\liter \per \hour}\right]$}&$\mathbf{\frac{\dot{V}_o-\dot{V}_i}{\dot{V}_0}\, \left[\si{\percent}\right]}$\\
@@ -282,14 +282,12 @@ Da nach dem \textsc{Torricelli}-Theorem (siehe Abschnitt \ref{sec:torricelli}) e
 \end{figure}
 \FloatBarrier
 \vspace*{-5mm}
-In Abbildung \ref{dia:pump_fehler} ist zu erkennen, dass alle Messreihen jeweils eine Gerade ergeben. Zudem zeigt sich, dass Messreihe 4, mit dem geringsten Volumenstrom, den geringsten Anstieg und Messreihe 1, mit dem höchsten Volumenstrom, den höchsten Anstieg aufweist. 
-\newpage
-Berechnet man zusätzlich für Messreihe 4 die, die benötigt wird um eine Abweichung von \SI{100}{\percent}, sprich $\dot{V}=\SI{0}{\liter \per \hour}$,  zu erreichen so ergibt sich eine Zeit von $t_\text{Ende} \approx \SI{48}{\minute}$ \mbox{(vgl. Gleichung \ref{gl:zeit})}.
-\vspace*{-2.5mm}
+In Abbildung \ref{dia:pump_fehler} ist zu erkennen, dass alle Messreihen jeweils eine Gerade ergeben. Zudem zeigt sich, dass Messreihe 1, mit dem höchsten Volumenstrom, den höchsten Anstieg und Messreihe 4, mit dem geringsten Volumenstrom, den geringsten Anstieg aufweist.\\
+Berechnet man zusätzlich für Messreihe 4 die, die Zeit benötigt wird um eine Abweichung von \SI{100}{\percent}, sprich $\dot{V}=\SI{0}{\liter \per \hour}$,  zu erreichen so ergibt sich eine Zeit von $t_\text{Ende} \approx \SI{48}{\minute}$ \mbox{(vgl. Gleichung \ref{gl:zeit})}.
+
 \begin{flalign}
 \label{gl:zeit}
 	a_{M4} &= 0,0349*t+0,4087\\
-	t &= \frac{a_{M4}-0,4087}{0,0349} = \frac{100-0,4087}{0,0349} \\
-	&= \SI{2855}{\second} \approx\underline{ \SI{48}{\minute}}
+	t &= \frac{a_{M4}-0,4087}{0,0349} = \frac{100-0,4087}{0,0349} = \SI{2855}{\second} \approx\underline{ \SI{48}{\minute}}
 \end{flalign}
 
