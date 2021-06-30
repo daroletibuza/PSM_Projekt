@@ -2,6 +2,7 @@
 \label{sec:ergebnisse}
 \subsection*{Ergebnisse der Temperaturprofile}
 In Tabelle \ref{tab:volumenstrom_kuehlung} sind die Messwerte für die Bestimmung des maximalen Volumenstroms des Kühlwassers und in Tabelle \ref{tab:zeiten} sind die gemessenen Zeiten zum Aufheizen und Abkühlen des leeren Reaktorsystems aufgeführt.
+\vspace*{-2mm}
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
@@ -35,15 +36,11 @@ Für diesen Versuch konnte eine mittlerer Kühlwasserstrom von \SI{55,3}{\liter\
 	\end{tabulary}
 \end{table}%
 \FloatBarrier
-Für das Erreichen der Solltemperatur von \SI{80}{\celsius} und einer Starttemperatur von \SI{25}{\celsius} ergab sich für das genutzte Thermostat eine Aufheizzeit von \SI{24}{\minute}. Die umgekehrte Kühlung des Thermostates von \SI{80}{\celsius} auf \SI{25}{\celsius} ergab unter Nutzung des maximalen Kühlwasserstrom ebenfalls \SI{24}{\minute}. \\
-Als Folge dieser Ergebnisse wurden die Temperaturprofile so programmiert, dass zum Aufheizen bzw. Abkühlen jeweils \SI{25}{\minute} Zeit sind. 
-
-In Abb. \ref{dia:temp_graphen} sind alle thermischen Vorgänge für den gesamten Prozess 1 ohne Wasserdampfdestillation in einem Diagramm dargestellt.
-Zu beachten ist, dass der Verlauf der Solltemperatur bis auf ein paar Minuten zu Beginn nicht gemessen wurde (siehe Abb. \ref{dia:temp_graphen})! Der weitere Verlauf der Solltemperatur ist für die Prozessdarstellung simuliert worden. Der Zeitpunkt $t=0$ wurde mit Beginn des Aufheizvorganges festgelegt.
+Für das Erreichen der Solltemperatur von \SI{80}{\celsius} und einer Starttemperatur von \SI{25}{\celsius} ergab sich für das genutzte Thermostat eine Aufheizzeit von \SI{24}{\minute}. Die umgekehrte Kühlung des Thermostates von \SI{80}{\celsius} auf \SI{25}{\celsius} ergab unter Nutzung des maximalen Kühlwasserstrom ebenfalls \SI{24}{\minute}.
 
 \begin{figure}[h!]
 	\begin{center}
-		\resizebox{0.8\textwidth}{!}{
+		\resizebox{0.65\textwidth}{!}{
 			\begin{tikzpicture}[trim axis left, trim axis right]
 				\begin{axis}[
 					grid = major,
@@ -90,11 +87,14 @@ Zu beachten ist, dass der Verlauf der Solltemperatur bis auf ein paar Minuten zu
 \end{figure}
 \FloatBarrier
 \vspace*{-5mm}
+Als Folge dieser Ergebnisse wurden die Temperaturprofile so programmiert, dass zum Aufheizen bzw. Abkühlen jeweils \SI{25}{\minute} Zeit sind. 
+In Abb. \ref{dia:temp_graphen} sind alle thermischen Vorgänge für den gesamten Prozess 1 ohne Wasserdampfdestillation in einem Diagramm dargestellt.
+Zu beachten ist, dass der Verlauf der Solltemperatur bis auf ein paar Minuten zu Beginn nicht gemessen wurde (siehe Abb. \ref{dia:temp_graphen})! Der weitere Verlauf der Solltemperatur ist für die Prozessdarstellung simuliert worden. Weiterhin ist zu erkennen, dass der Temperaturverlauf des Aufheizens linear steigend und der der Abkühlung exponentiell fallend verläuft. Der Zeitpunkt $t=0$ wurde mit Beginn des Aufheizvorganges festgelegt.
+
 \subsection*{Ergebnisse der Pumpendosierung}
 
-In Tabelle \ref{tab:pumpe1} sind die Ergebnisse der Volumenströme bei verschiedenen Pumpeneinstellungen der Magnetmembran-Pumpe aufgeführt. Zeit- und Volumenmessung sind hierbei unpräzise, dennoch ist die Tendenz der Einstellungen erkennbar.\\
-Als grobe Abschätzung zeigt sich, dass die Magnet-Membranpumpe ein minimalen Volumenstrom von rund \SI{6}{\milli \liter \per \minute} bzw. \SI{360}{\milli \liter \per \hour} hat.\\
-In Tabelle \ref{tab:pumpe2} sind die Messergebnisse für die untersuchte Zahnradpumpe aufgeführt. Hierfür wurde die minimale Drehzahl danach bestimmt bei welcher Einstellung noch ein Volumenstrom zu verzeichnen ist. Anzumerken ist, dass sich die Messwerte auf einen bestimmten Füllstand des Behälters beziehen. Zudem stehen Vorratsbehälter und Pumpe auf gleicher Höhe. 
+In Tabelle \ref{tab:pumpe1} sind die Ergebnisse der Volumenströme bei verschiedenen Pumpeneinstellungen der Magnetmembran-Pumpe aufgeführt. Zeit- und Volumenmessung sind hierbei unpräzise, dennoch ist die Tendenz der Einstellungen erkennbar. Als grobe Abschätzung zeigt sich, dass die Magnet-Membranpumpe ein minimalen Volumenstrom von rund \SI{6}{\milli \liter \per \minute} bzw. \SI{360}{\milli \liter \per \hour} hat. In Tabelle \ref{tab:pumpe2} sind die Messergebnisse für die untersuchte Zahnradpumpe aufgeführt. Hierfür wurde die minimale Drehzahl danach bestimmt bei welcher Einstellung noch ein Volumenstrom zu verzeichnen ist. Anzumerken ist, dass sich die Messwerte auf einen bestimmten Füllstand des Behälters beziehen. Zudem stehen Vorratsbehälter und Pumpe auf gleicher Höhe. Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Füllstandes und Höhenunterschied zwischen Behälter und Pumpe sich unterschiedliche minimale Drehzahlen ergeben. Die Magnet-Membranpumpe ist nicht auf dieses Zusammenhang untersucht worden, es wird jedoch erwartet, dass auch für diese Pumpe eine Abhängigkeit des Volumenstroms vom Füllstand besteht. Daher sind die Messwerte in Tabelle \ref{tab:pumpe1} und \ref{tab:pumpe2} kritisch zu bewerten. Eine grobe Abschätzung der Volumenströme im Vergleich zur Magnet-Membranpumpe und den geforderten Volumenströmen ist dennoch möglich \mbox{(vgl. Abb. \ref{dia:bar_pumpe})}. In dieser Abbildung \ref{dia:bar_pumpe} fällt bereits auf, dass beide Pumpen den meisten Anforderungen des Prozesses nicht gerecht werden.
+\vspace*{-2.5mm}
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
@@ -119,15 +119,13 @@ In Tabelle \ref{tab:pumpe2} sind die Messergebnisse für die untersuchte Zahnrad
 \end{table}%
 \FloatBarrier
 \vspace*{-5mm}
-Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Füllstandes und Höhenunterschied zwischen Behälter und Pumpe sich unterschiedliche minimale Drehzahlen ergeben. Die Magnet-Membranpumpe ist nicht auf dieses Zusammenhang untersucht worden, es wird jedoch erwartet, dass auch für diese Pumpe eine Abhängigkeit des Volumenstroms vom Füllstand besteht. Daher sind die Messwerte in Tabelle \ref{tab:pumpe2} kritisch zu bewerten. Eine grobe Abschätzung der Volumenströme im Vergleich zur Magnet-Membranpumpe und den geforderten Volumenströmen ist dennoch möglich (vgl. Abb. \ref{dia:bar_pumpe}). In dieser Abbildung fällt bereits auf, dass beide Pumpen den meisten Anforderungen des Prozesses nicht gerecht werden.
-\vspace*{-5mm}
 \begin{table}[h!]
 	\renewcommand*{\arraystretch}{1.2}
 	\centering
 	\rowcolors{2}{white}{gray!25}
 	\caption{Minimale Volumenströme der Zahnradpumpe}
 	\label{tab:pumpe2}
-	\resizebox{0.8\textwidth}{!}{
+	\resizebox{\textwidth}{!}{
 		\begin{tabulary}{1.2\textwidth}{CCCCC}
 			\textbf{Messreihe} & \textbf{Zeit $\left[\si{\minute}\right]$} & \textbf{Volumen $\left[\si{\milli \liter}\right]$}& \textbf{Volumenstrom $\left[\si{\milli \liter \per \minute}\right]$}&\textbf{Volumenstrom $\left[\si{\milli \liter \per \hour}\right]$}\\
 			\hline
@@ -139,13 +137,14 @@ Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Fülls
 }
 \end{table}%
 \FloatBarrier 
+\vspace*{-3mm}
 \begin{figure}[h!]
 	\begin{center}
-		\resizebox{0.8\textwidth}{!}{
+		\resizebox{0.7\textwidth}{!}{
 		\begin{tikzpicture}
 			\begin{axis}[
 				width  = 0.85*\textwidth,
-				height = 6cm,
+				height = 6.5cm,
 				major x tick style = transparent,
 				ybar=2*\pgflinewidth,
 				bar width=14pt,
@@ -184,12 +183,11 @@ Diese Angaben sind wichtig, da festgestellt wurde, dass je nach Höhe des Fülls
 			\end{axis}
 		\end{tikzpicture}
 			}
-		\caption{Gegenüberstellung der geforderten Volumenströme gegenüber den möglichen Volumenströmen mit den vorhandenen Pumpen}
+		\caption{Gegenüberstellung der geforderten Volumenströme der Prozesse 1 und 2 gegenüber den möglichen Volumenströmen mit den vorhandenen Pumpen}
 		\label{dia:bar_pumpe}
 	\end{center}
 \end{figure}
 \FloatBarrier
-
 Die Tatsache, dass die Volumenströme der Zahnradpumpe abhängig vom Füllstand sind wird in Tabelle \ref{tab:pumpe2_anderung} untermauert. Hierbei wurden bei verschiedenen Drehzahlen und gleicher Höhendifferenz zwischen Vorratsbehälter und Pumpe, bestimmte Volumina über die Zeit gemessen. Die dargestellte Zeit ist hierbei als Offset der ersten Zeitmessung der jeweiligen Messreihe zu verstehen. 
 
 % Table generated by Excel2LaTeX from sheet 'Daten'
@@ -233,7 +231,7 @@ Für die Volumenströme der vier Messreihen gilt:
 	\dot{V}_1 = \dot{V}_2 > \dot{V}_3 > \dot{V}_4
 \end{equation*}
 
-Da nach dem \textsc{Torricelli}-Theorem (siehe Abschnitt \ref{sec:torricelli}) ein linearer Abfall der Geschwindigkeit bzw. des Volumenstroms zu erwarten ist, wird ebenfalls eine linearer Anstieg der Abweichung des Startvolumenstroms über der Zeit erwartet. Aufgetragen ist dieser Zusammenhang in Abb. \ref{dia:pump_fehler}.
+Da nach dem \textsc{Torricelli}-Theorem (siehe Abschnitt \ref{sec:torricelli}) ein linearer Abfall der Fließgeschwindigkeit bzw. des Volumenstroms zu erwarten ist, wird ebenfalls eine linearer Anstieg der Abweichung des Startvolumenstroms über der Zeit erwartet. Aufgetragen ist dieser Zusammenhang in Abb. \ref{dia:pump_fehler}.
 
 \begin{figure}[h!]
 	\begin{center}
@@ -283,11 +281,18 @@ Da nach dem \textsc{Torricelli}-Theorem (siehe Abschnitt \ref{sec:torricelli}) e
 \FloatBarrier
 \vspace*{-5mm}
 In Abbildung \ref{dia:pump_fehler} ist zu erkennen, dass alle Messreihen jeweils eine Gerade ergeben. Zudem zeigt sich, dass Messreihe 1, mit dem höchsten Volumenstrom, den höchsten Anstieg und Messreihe 4, mit dem geringsten Volumenstrom, den geringsten Anstieg aufweist.\\
-Berechnet man zusätzlich für Messreihe 4 die, die Zeit benötigt wird um eine Abweichung von \SI{100}{\percent}, sprich $\dot{V}=\SI{0}{\liter \per \hour}$,  zu erreichen so ergibt sich eine Zeit von $t_\text{Ende} \approx \SI{48}{\minute}$ \mbox{(vgl. Gleichung \ref{gl:zeit})}.
-
+Berechnet man zusätzlich für Messreihe 4 die, die Zeit benötigt wird um eine Abweichung von \SI{100}{\percent}, sprich $\dot{V}=\SI{0}{\liter \per \hour}$,  zu erreichen so ergibt sich eine Zeit von $t_\text{Ende} \approx \SI{48}{\minute}$ \mbox{(vgl. Gleichung \eqref{gl:zeit})}.
+\vspace*{-1.5mm}
 \begin{flalign}
 \label{gl:zeit}
 	a_{M4} &= 0,0349*t+0,4087\\
 	t &= \frac{a_{M4}-0,4087}{0,0349} = \frac{100-0,4087}{0,0349} = \SI{2855}{\second} \approx\underline{ \SI{48}{\minute}}
 \end{flalign}
+
+\begin{flalign}
+	\label{gl:zeit2}
+	a_{M4} &= 0,0349*t+0,4087\\
+	t &= \frac{a_{M4}-0,4087}{0,0349} = \frac{10-0,4087}{0,0349} = \SI{275}{\second} \approx\underline{ \SI{5}{\minute}}
+\end{flalign}
+
 
